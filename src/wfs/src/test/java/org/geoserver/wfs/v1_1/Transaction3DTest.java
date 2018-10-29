@@ -17,7 +17,7 @@ import org.geoserver.catalog.FeatureTypeInfo;
 import org.geoserver.data.test.SystemTestData;
 import org.geoserver.wfs.WFSTestSupport;
 import org.geotools.data.DataUtilities;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 import org.geotools.data.simple.SimpleFeatureSource;
 import org.geotools.factory.CommonFactoryFinder;
 import org.geotools.geometry.jts.coordinatesequence.CoordinateSequences;

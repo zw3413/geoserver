@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.NoSuchElementException;
 import org.geotools.data.collection.ListFeatureCollection;
 import org.geotools.feature.FeatureIterator;
-import org.geotools.feature.collection.BaseFeatureCollection;
+import org.geotools.data.collection.BaseFeatureCollection;
 import org.geotools.geometry.jts.ReferencedEnvelope;
 import org.geotools.util.factory.Hints;
 import org.opengis.feature.Feature;

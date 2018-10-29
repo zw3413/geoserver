@@ -28,7 +28,7 @@ import org.geotools.data.Query;
 import org.geotools.data.Repository;
 import org.geotools.data.ServiceInfo;
 import org.geotools.data.collection.ListFeatureCollection;
-import org.geotools.data.simple.SimpleFeatureIterator;
+import org.geotools.feature.collection.SimpleFeatureIterator;
 import org.geotools.data.simple.SimpleFeatureSource;
 import org.geotools.data.simple.SimpleFeatureStore;
 import org.geotools.data.store.ContentFeatureCollection;

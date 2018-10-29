@@ -57,7 +57,7 @@ public class RulesBuilder {
 
     public RulesBuilder() {
         ff = CommonFactoryFinder.getFilterFactory2(GeoTools.getDefaultHints());
-        styleFactory = CommonFactoryFinder.getStyleFactory(GeoTools.getDefaultHints());
+        styleFactory = StyleFactoryFinder.getStyleFactory(GeoTools.getDefaultHints());
         sb = new StyleBuilder();
     }
 

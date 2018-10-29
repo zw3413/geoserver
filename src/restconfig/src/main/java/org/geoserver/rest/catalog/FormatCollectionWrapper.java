@@ -4,7 +4,7 @@
  */
 package org.geoserver.rest.catalog;
 
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 
 /** Base class for collection wrappers used to decide the output format in the controller code */
 public abstract class FormatCollectionWrapper {

@@ -17,7 +17,7 @@ import org.geoserver.wps.ppio.ComplexPPIO;
 import org.geoserver.wps.ppio.ProcessParameterIO;
 import org.geoserver.wps.resource.WPSResourceManager;
 import org.geotools.data.Parameter;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 import org.geotools.data.simple.SimpleFeatureSource;
 import org.geotools.data.store.ReprojectingFeatureCollection;
 import org.geotools.filter.visitor.SimplifyingFilterVisitor;

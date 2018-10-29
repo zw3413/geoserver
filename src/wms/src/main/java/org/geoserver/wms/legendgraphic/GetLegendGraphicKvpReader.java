@@ -40,11 +40,10 @@ import org.geoserver.wms.GetLegendGraphicRequest.LegendRequest;
 import org.geoserver.wms.MapLayerInfo;
 import org.geoserver.wms.WMS;
 import org.geotools.coverage.grid.io.GridCoverage2DReader;
-import org.geotools.data.simple.SimpleFeatureCollection;
-import org.geotools.data.util.NullProgressListener;
-import org.geotools.factory.CommonFactoryFinder;
-import org.geotools.feature.SchemaException;
 import org.geotools.coverage.util.FeatureUtilities;
+import org.geotools.feature.collection.SimpleFeatureCollection;
+import org.geotools.data.util.NullProgressListener;
+import org.geotools.feature.SchemaException;
 import org.geotools.styling.Style;
 import org.geotools.styling.StyleFactory;
 import org.geotools.util.URLs;
@@ -84,7 +83,7 @@ public class GetLegendGraphicKvpReader extends KvpRequestReader {
      * parameters).
      */
     private static final StyleFactory styleFactory =
-            CommonFactoryFinder.getStyleFactory(GeoTools.getDefaultHints());
+            StyleFactoryFinder.getStyleFactory(GeoTools.getDefaultHints());
 
     private WMS wms;
 

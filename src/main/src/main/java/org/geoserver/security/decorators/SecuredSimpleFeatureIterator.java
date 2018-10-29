@@ -7,7 +7,7 @@ package org.geoserver.security.decorators;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-import org.geotools.data.simple.SimpleFeatureIterator;
+import org.geotools.feature.collection.SimpleFeatureIterator;
 import org.opengis.feature.simple.SimpleFeature;
 
 /**

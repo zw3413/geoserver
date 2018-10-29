@@ -25,7 +25,6 @@ import org.geotools.data.property.PropertyDataStore;
 import org.geotools.data.shapefile.ShapefileDataStore;
 import org.geotools.data.simple.SimpleFeatureSource;
 import org.geotools.data.view.DefaultView;
-import org.geotools.factory.CommonFactoryFinder;
 import org.geotools.geometry.jts.JTS;
 import org.geotools.geometry.jts.ReferencedEnvelope;
 import org.geotools.map.FeatureLayer;
@@ -51,7 +50,7 @@ import org.springframework.web.context.support.GenericWebApplicationContext;
  */
 public class HTMLImageMapTest {
 
-    private static final StyleFactory sFac = CommonFactoryFinder.getStyleFactory(null);
+    private static final StyleFactory sFac = StyleFactoryFinder.getStyleFactory(null);
 
     private static final Logger LOGGER =
             org.geotools.util.logging.Logging.getLogger(

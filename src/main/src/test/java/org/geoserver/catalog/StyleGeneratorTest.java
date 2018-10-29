@@ -23,7 +23,6 @@ import org.apache.commons.io.IOUtils;
 import org.easymock.IAnswer;
 import org.geoserver.catalog.impl.CatalogFactoryImpl;
 import org.geotools.data.DataUtilities;
-import org.geotools.factory.CommonFactoryFinder;
 import org.geotools.styling.FeatureTypeStyle;
 import org.geotools.styling.NamedLayer;
 import org.geotools.styling.RasterSymbolizer;
@@ -75,7 +74,7 @@ public class StyleGeneratorTest {
                                 byte[] input = IOUtils.toByteArray(is);
 
                                 SLDParser parser =
-                                        new SLDParser(CommonFactoryFinder.getStyleFactory());
+                                        new SLDParser(StyleFactoryFinder.getStyleFactory());
                                 parser.setInput(new ByteArrayInputStream(input));
                                 StyledLayerDescriptor sld = parser.parseSLD();
 
@@ -152,7 +151,7 @@ public class StyleGeneratorTest {
                                 byte[] input = IOUtils.toByteArray(is);
 
                                 SLDParser parser =
-                                        new SLDParser(CommonFactoryFinder.getStyleFactory());
+                                        new SLDParser(StyleFactoryFinder.getStyleFactory());
                                 parser.setInput(new ByteArrayInputStream(input));
                                 StyledLayerDescriptor sld = parser.parseSLD();
 

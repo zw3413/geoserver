@@ -16,7 +16,7 @@ import org.geoserver.sldservice.utils.classifier.RulesBuilder;
 import org.geoserver.sldservice.utils.classifier.impl.BlueColorRamp;
 import org.geotools.data.DataUtilities;
 import org.geotools.data.memory.MemoryDataStore;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 import org.geotools.data.simple.SimpleFeatureSource;
 import org.geotools.factory.CommonFactoryFinder;
 import org.geotools.feature.simple.SimpleFeatureBuilder;

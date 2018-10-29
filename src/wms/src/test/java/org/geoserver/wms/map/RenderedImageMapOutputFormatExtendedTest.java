@@ -35,7 +35,6 @@ import org.geoserver.wms.WMSMapContent;
 import org.geoserver.wms.WMSTestSupport;
 import org.geoserver.wms.map.RenderedImageMapOutputFormatTest.DummyRasterMapProducer;
 import org.geotools.coverage.grid.io.GridCoverage2DReader;
-import org.geotools.factory.CommonFactoryFinder;
 import org.geotools.filter.IllegalFilterException;
 import org.geotools.geometry.jts.ReferencedEnvelope;
 import org.geotools.map.Layer;
@@ -170,7 +169,7 @@ public class RenderedImageMapOutputFormatExtendedTest extends WMSTestSupport {
         map.getViewport().setBounds(bbox);
 
         // Setup a style
-        final SLDParser parser = new SLDParser(CommonFactoryFinder.getStyleFactory());
+        final SLDParser parser = new SLDParser(StyleFactoryFinder.getStyleFactory());
         parser.setInput(
                 RasterSymbolizerVisitorTest.class.getResource("CropTransformAndChannelSelect.sld"));
         final StyledLayerDescriptor sld = parser.parseSLD();

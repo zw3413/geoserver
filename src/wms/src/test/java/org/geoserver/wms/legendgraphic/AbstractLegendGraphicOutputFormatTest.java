@@ -29,18 +29,17 @@ import org.geoserver.data.test.MockData;
 import org.geoserver.wms.GetLegendGraphicRequest;
 import org.geoserver.wms.GetLegendGraphicRequest.LegendRequest;
 import org.geotools.coverage.grid.GridCoverage2D;
-import org.geotools.data.simple.SimpleFeatureCollection;
-import org.geotools.factory.CommonFactoryFinder;
+import org.geotools.coverage.util.FeatureUtilities;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 import org.geotools.feature.NameImpl;
 import org.geotools.feature.simple.SimpleFeatureTypeBuilder;
 import org.geotools.feature.type.AttributeDescriptorImpl;
 import org.geotools.feature.type.AttributeTypeImpl;
 import org.geotools.feature.type.GeometryDescriptorImpl;
 import org.geotools.feature.type.GeometryTypeImpl;
+import org.geotools.image.util.ImageUtilities;
 import org.geotools.referencing.CRS;
 import org.geotools.renderer.lite.RendererUtilities;
-import org.geotools.coverage.util.FeatureUtilities;
-import org.geotools.image.util.ImageUtilities;
 import org.geotools.styling.ColorMapEntry;
 import org.geotools.styling.FeatureTypeStyle;
 import org.geotools.styling.RasterSymbolizer;
@@ -1296,7 +1295,7 @@ public class AbstractLegendGraphicOutputFormatTest extends BaseLegendTest {
      * @throws IOException
      */
     private Style readSLD(String sldName) throws IOException {
-        StyleFactory styleFactory = CommonFactoryFinder.getStyleFactory(null);
+        StyleFactory styleFactory = StyleFactoryFinder.getStyleFactory(null);
         SLDParser stylereader = new SLDParser(styleFactory, getClass().getResource(sldName));
         Style[] readStyles = stylereader.readXML();
 

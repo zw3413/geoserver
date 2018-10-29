@@ -29,7 +29,7 @@ import org.geoserver.security.impl.GeoServerUser;
 import org.geoserver.security.password.MasterPasswordProviderConfig;
 import org.geoserver.test.RunTestSetup;
 import org.geoserver.test.SystemTest;
-import org.geotools.data.Base64;
+import org.geotools.data.util.Base64;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;

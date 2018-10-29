@@ -40,7 +40,6 @@ import org.geoserver.rest.RestException;
 import org.geoserver.rest.util.IOUtils;
 import org.geoserver.rest.util.MediaTypeExtensions;
 import org.geoserver.rest.wrapper.RestWrapper;
-import org.geotools.factory.CommonFactoryFinder;
 import org.geotools.styling.Style;
 import org.geotools.styling.StyledLayerDescriptor;
 import org.geotools.util.Version;
@@ -545,7 +544,7 @@ public class StyleController extends AbstractCatalogController {
         try {
             is = new FileInputStream(sldFile);
 
-            SLDParser parser = new SLDParser(CommonFactoryFinder.getStyleFactory(null), is);
+            SLDParser parser = new SLDParser(StyleFactoryFinder.getStyleFactory(null), is);
             EntityResolver resolver = catalog.getResourcePool().getEntityResolver();
             if (resolver != null) {
                 parser.setEntityResolver(resolver);

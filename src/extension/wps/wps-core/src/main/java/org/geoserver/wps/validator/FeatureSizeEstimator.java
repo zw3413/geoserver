@@ -5,7 +5,7 @@
 package org.geoserver.wps.validator;
 
 import java.util.Date;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 import org.locationtech.jts.geom.Geometry;
 import org.locationtech.jts.geom.Point;
 import org.opengis.feature.simple.SimpleFeature;

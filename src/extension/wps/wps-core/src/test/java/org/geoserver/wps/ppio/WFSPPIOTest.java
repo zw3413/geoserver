@@ -26,7 +26,7 @@ import org.geoserver.data.test.SystemTestData;
 import org.geoserver.platform.GeoServerExtensions;
 import org.geoserver.wps.WPSTestSupport;
 import org.geoserver.wps.resource.WPSResourceManager;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

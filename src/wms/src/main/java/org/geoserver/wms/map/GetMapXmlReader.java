@@ -34,7 +34,6 @@ import org.geotools.data.Transaction;
 import org.geotools.data.crs.ForceCoordinateSystemFeatureReader;
 import org.geotools.data.memory.MemoryDataStore;
 import org.geotools.data.simple.SimpleFeatureSource;
-import org.geotools.factory.CommonFactoryFinder;
 import org.geotools.feature.FeatureTypes;
 import org.geotools.filter.ExpressionDOMParser;
 import org.geotools.referencing.CRS;
@@ -75,7 +74,7 @@ public class GetMapXmlReader extends org.geoserver.ows.XmlRequestReader {
 
     private static final Logger LOGGER = Logging.getLogger(GetMapXmlReader.class);
 
-    private static final StyleFactory styleFactory = CommonFactoryFinder.getStyleFactory();
+    private static final StyleFactory styleFactory = StyleFactoryFinder.getStyleFactory();
 
     private WMS wms;
 

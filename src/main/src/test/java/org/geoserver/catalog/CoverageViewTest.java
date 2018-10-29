@@ -5,7 +5,6 @@
  */
 package org.geoserver.catalog;
 
-import static org.geotools.gml2.GML.coverage;
 import static org.junit.Assert.*;
 
 import it.geosolutions.jaiext.JAIExt;
@@ -35,7 +34,7 @@ import org.geotools.coverage.grid.io.StructuredGridCoverage2DReader;
 import org.geotools.coverage.grid.io.footprint.FootprintBehavior;
 import org.geotools.data.DataUtilities;
 import org.geotools.data.Query;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 import org.geotools.feature.visitor.MinVisitor;
 import org.geotools.geometry.GeneralEnvelope;
 import org.geotools.geometry.jts.ReferencedEnvelope;

@@ -18,7 +18,6 @@ import org.geoserver.catalog.ResourcePool;
 import org.geoserver.catalog.impl.FeatureTypeInfoImpl;
 import org.geoserver.data.test.SystemTestData;
 import org.geoserver.rest.catalog.CatalogRESTTestSupport;
-import org.geotools.factory.CommonFactoryFinder;
 import org.geotools.feature.simple.SimpleFeatureTypeBuilder;
 import org.geotools.styling.FeatureTypeStyle;
 import org.geotools.styling.NamedLayer;
@@ -45,7 +44,7 @@ public abstract class SLDServiceBaseTest extends CatalogRESTTestSupport {
 
     protected StyleBuilder styleBuilder = new StyleBuilder();
 
-    protected SLDParser sldParser = new SLDParser(CommonFactoryFinder.getStyleFactory());
+    protected SLDParser sldParser = new SLDParser(StyleFactoryFinder.getStyleFactory());
 
     protected static final String FEATURETYPE_LAYER = "featuretype_layer";
 

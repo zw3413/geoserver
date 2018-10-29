@@ -14,7 +14,6 @@ import java.util.List;
 import java.util.logging.Logger;
 import javax.annotation.Nullable;
 import org.geoserver.platform.GeoServerExtensions;
-import org.geotools.factory.CommonFactoryFinder;
 import org.geotools.styling.NamedLayer;
 import org.geotools.styling.NamedStyle;
 import org.geotools.styling.Style;
@@ -34,7 +33,7 @@ public class Styles {
     /** logger */
     static Logger LOGGER = Logging.getLogger("org.geoserver.wms");
 
-    static StyleFactory styleFactory = CommonFactoryFinder.getStyleFactory(null);
+    static StyleFactory styleFactory = StyleFactoryFinder.getStyleFactory(null);
 
     /**
      * Encodes the specified SLD as a string.

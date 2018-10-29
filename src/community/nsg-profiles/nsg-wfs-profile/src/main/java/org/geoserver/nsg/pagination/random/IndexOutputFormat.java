@@ -31,7 +31,7 @@ import org.geoserver.wfs.request.FeatureCollectionResponse;
 import org.geoserver.wfs.response.v2_0.HitsOutputFormat;
 import org.geotools.data.DataStore;
 import org.geotools.data.collection.ListFeatureCollection;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 import org.geotools.data.simple.SimpleFeatureStore;
 import org.geotools.feature.simple.SimpleFeatureBuilder;
 import org.geotools.util.logging.Logging;

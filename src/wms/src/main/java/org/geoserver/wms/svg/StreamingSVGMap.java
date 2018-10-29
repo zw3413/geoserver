@@ -13,7 +13,7 @@ import org.geoserver.wms.WMSMapContent;
 import org.geoserver.wms.WebMap;
 import org.geotools.data.DataUtilities;
 import org.geotools.data.Query;
-import org.geotools.data.simple.SimpleFeatureIterator;
+import org.geotools.feature.collection.SimpleFeatureIterator;
 import org.geotools.data.simple.SimpleFeatureSource;
 import org.geotools.factory.CommonFactoryFinder;
 import org.geotools.geometry.jts.ReferencedEnvelope;

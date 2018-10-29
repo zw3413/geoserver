@@ -7,7 +7,7 @@ package org.geoserver.opensearch.eo.store;
 import java.util.NoSuchElementException;
 import java.util.function.Function;
 import java.util.logging.Logger;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 import org.geotools.feature.FeatureIterator;
 import org.geotools.feature.collection.BaseFeatureCollection;
 import org.geotools.util.logging.Logging;

@@ -16,9 +16,8 @@ import org.geoserver.wms.RenderingVariables;
 import org.geoserver.wms.WMSMapContent;
 import org.geoserver.wms.WMSTestSupport;
 import org.geotools.data.Query;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 import org.geotools.data.simple.SimpleFeatureSource;
-import org.geotools.factory.CommonFactoryFinder;
 import org.geotools.filter.visitor.NullFilterVisitor;
 import org.geotools.geometry.jts.ReferencedEnvelope;
 import org.geotools.map.FeatureLayer;
@@ -90,7 +89,7 @@ public class VectorToRasterTransformTest extends WMSTestSupport {
     }
 
     private Style parseStyle(final String styleName) throws IOException {
-        final SLDParser parser = new SLDParser(CommonFactoryFinder.getStyleFactory());
+        final SLDParser parser = new SLDParser(StyleFactoryFinder.getStyleFactory());
         parser.setInput(RasterSymbolizerVisitorTest.class.getResource(styleName));
         final StyledLayerDescriptor sld = parser.parseSLD();
         final NamedLayer ul = (NamedLayer) sld.getStyledLayers()[0];

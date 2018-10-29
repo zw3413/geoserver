@@ -22,7 +22,7 @@ import org.geoserver.script.wfs.TransactionDetail.Entry;
 import org.geoserver.wfs.TransactionEvent;
 import org.geoserver.wfs.TransactionEventType;
 import org.geoserver.wfs.request.TransactionRequest;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 
 public class ScriptTransctionPluginTest extends TestCase {
 

@@ -8,7 +8,6 @@ import java.io.*;
 import java.util.List;
 import java.util.logging.Logger;
 import org.apache.commons.io.FileUtils;
-import org.geotools.styling.*;
 import org.geotools.util.Version;
 import org.geotools.util.logging.Logging;
 import org.xml.sax.EntityResolver;

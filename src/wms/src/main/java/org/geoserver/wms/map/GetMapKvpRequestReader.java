@@ -97,7 +97,7 @@ public class GetMapKvpRequestReader extends KvpRequestReader
     }
 
     /** style factory */
-    private StyleFactory styleFactory = CommonFactoryFinder.getStyleFactory(null);
+    private StyleFactory styleFactory = StyleFactoryFinder.getStyleFactory(null);
 
     /** filter factory */
     private FilterFactory filterFactory = CommonFactoryFinder.getFilterFactory(null);
@@ -780,7 +780,7 @@ public class GetMapKvpRequestReader extends KvpRequestReader
         if (layer.getResource() instanceof WMSLayerInfo) {
             // NamedStyle is a subclass of Style -> we use it as a way to convey
             // cascaded WMS layer styles
-            NamedStyle namedStyle = CommonFactoryFinder.getStyleFactory(null).createNamedStyle();
+            NamedStyle namedStyle = StyleFactoryFinder.getStyleFactory(null).createNamedStyle();
             namedStyle.setName(null);
             return namedStyle;
         } else {

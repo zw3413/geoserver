@@ -19,7 +19,6 @@ import org.geoserver.platform.resource.FileSystemResourceStore;
 import org.geoserver.platform.resource.MemoryLockProvider;
 import org.geoserver.platform.resource.Resource;
 import org.geoserver.test.GeoServerSystemTestSupport;
-import org.geotools.factory.CommonFactoryFinder;
 import org.geotools.styling.DefaultResourceLocator;
 import org.geotools.styling.PointSymbolizer;
 import org.geotools.styling.SLD;
@@ -68,7 +67,7 @@ public class StylesTest extends GeoServerSystemTestSupport {
 
     @Test
     public void testEmptyStyle() throws Exception {
-        SLDParser parser = new SLDParser(CommonFactoryFinder.getStyleFactory());
+        SLDParser parser = new SLDParser(StyleFactoryFinder.getStyleFactory());
         parser.setInput(StylesTest.class.getResourceAsStream("empty.sld"));
         StyledLayerDescriptor sld = parser.parseSLD();
 

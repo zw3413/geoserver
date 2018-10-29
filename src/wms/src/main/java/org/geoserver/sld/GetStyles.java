@@ -13,7 +13,6 @@ import org.geoserver.catalog.LayerInfo;
 import org.geoserver.catalog.StyleInfo;
 import org.geoserver.platform.ServiceException;
 import org.geoserver.wms.WMS;
-import org.geotools.factory.CommonFactoryFinder;
 import org.geotools.styling.NamedLayer;
 import org.geotools.styling.Style;
 import org.geotools.styling.StyleFactory;
@@ -43,7 +42,7 @@ public class GetStyles {
             throw new ServiceException("SLD version " + request.getSldVer() + " not supported");
 
         try {
-            StyleFactory factory = CommonFactoryFinder.getStyleFactory(null);
+            StyleFactory factory = StyleFactoryFinder.getStyleFactory(null);
             List<StyledLayer> layers = new ArrayList<StyledLayer>();
             for (String layerName : request.getLayers()) {
                 NamedLayer namedLayer = factory.createNamedLayer();

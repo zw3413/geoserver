@@ -17,7 +17,7 @@ import java.util.Locale;
 import java.util.NoSuchElementException;
 import java.util.logging.Logger;
 import org.geotools.data.DataSourceException;
-import org.geotools.data.simple.SimpleFeatureIterator;
+import org.geotools.feature.collection.SimpleFeatureIterator;
 import org.locationtech.jts.geom.Coordinate;
 import org.locationtech.jts.geom.Envelope;
 import org.locationtech.jts.geom.Geometry;

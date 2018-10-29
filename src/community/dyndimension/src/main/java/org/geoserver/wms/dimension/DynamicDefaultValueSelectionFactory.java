@@ -44,7 +44,7 @@ import org.geotools.coverage.grid.io.GranuleSource;
 import org.geotools.coverage.grid.io.StructuredGridCoverage2DReader;
 import org.geotools.data.FeatureSource;
 import org.geotools.data.Query;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 import org.geotools.data.simple.SimpleFeatureSource;
 import org.geotools.data.view.DefaultView;
 import org.geotools.factory.CommonFactoryFinder;

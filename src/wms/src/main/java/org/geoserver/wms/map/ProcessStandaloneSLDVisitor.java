@@ -13,7 +13,6 @@ import org.geoserver.platform.ServiceException;
 import org.geoserver.wms.GetMapRequest;
 import org.geoserver.wms.MapLayerInfo;
 import org.geoserver.wms.WMS;
-import org.geotools.styling.*;
 import org.opengis.filter.Filter;
 
 /**

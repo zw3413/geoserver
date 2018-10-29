@@ -17,7 +17,6 @@ import org.geoserver.catalog.LayerInfo;
 import org.geoserver.data.test.MockData;
 import org.geoserver.data.test.SystemTestData;
 import org.geoserver.wms.WMSTestSupport;
-import org.geotools.factory.CommonFactoryFinder;
 import org.geotools.styling.NamedLayer;
 import org.geotools.styling.Style;
 import org.geotools.styling.StyledLayerDescriptor;
@@ -60,7 +59,7 @@ public class GetStylesIntegrationTest extends WMSTestSupport {
                                 + getLayerId(MockData.BASIC_POLYGONS)
                                 + "&sldver=1.0.0");
 
-        SLDParser parser = new SLDParser(CommonFactoryFinder.getStyleFactory(null));
+        SLDParser parser = new SLDParser(StyleFactoryFinder.getStyleFactory(null));
         parser.setInput(stream);
 
         StyledLayerDescriptor sld = parser.parseSLD();
@@ -81,7 +80,7 @@ public class GetStylesIntegrationTest extends WMSTestSupport {
                 get(
                         "wms?service=WMS&version=1.1.1&request=GetStyles&layers=lakesGroup&sldver=1.0.0");
 
-        SLDParser parser = new SLDParser(CommonFactoryFinder.getStyleFactory(null));
+        SLDParser parser = new SLDParser(StyleFactoryFinder.getStyleFactory(null));
         parser.setInput(stream);
 
         StyledLayerDescriptor sld = parser.parseSLD();
@@ -102,7 +101,7 @@ public class GetStylesIntegrationTest extends WMSTestSupport {
                                 + getLayerId(MockData.LAKES)
                                 + "&sldver=1.0.0");
 
-        SLDParser parser = new SLDParser(CommonFactoryFinder.getStyleFactory(null));
+        SLDParser parser = new SLDParser(StyleFactoryFinder.getStyleFactory(null));
         parser.setInput(stream);
 
         StyledLayerDescriptor sld = parser.parseSLD();

@@ -11,7 +11,7 @@ import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
 import java.util.logging.Logger;
 import org.geotools.data.memory.MemoryFeatureCollection;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 import org.geotools.feature.simple.SimpleFeatureBuilder;
 import org.geotools.feature.simple.SimpleFeatureTypeBuilder;
 import org.geotools.geometry.jts.ReferencedEnvelope;

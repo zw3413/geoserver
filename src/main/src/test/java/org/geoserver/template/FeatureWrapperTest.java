@@ -11,7 +11,7 @@ import freemarker.template.Configuration;
 import freemarker.template.Template;
 import java.io.StringWriter;
 import org.geotools.data.DataUtilities;
-import org.geotools.feature.DefaultFeatureCollection;
+import org.geotools.data.collection.DefaultFeatureCollection;
 import org.geotools.feature.simple.SimpleFeatureBuilder;
 import org.junit.Before;
 import org.junit.Test;

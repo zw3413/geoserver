@@ -14,8 +14,9 @@ import org.geoserver.data.test.MockData;
 import org.geoserver.data.test.SystemTestData;
 import org.geotools.data.DataUtilities;
 import org.geotools.data.FeatureSource;
-import org.geotools.data.simple.SimpleFeatureCollection;
-import org.geotools.data.simple.SimpleFeatureIterator;
+import org.geotools.data.collection.DecoratingSimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureIterator;
 import org.geotools.feature.FeatureIterator;
 import org.junit.Test;
 import org.opengis.feature.simple.SimpleFeature;
@@ -38,7 +39,7 @@ public class GetFeatureBoundedTest extends WFSTestSupport {
         final AtomicInteger openIterators = new AtomicInteger(0);
 
         SimpleFeatureCollection decorated =
-                new org.geotools.feature.collection.DecoratingSimpleFeatureCollection(fc) {
+                new DecoratingSimpleFeatureCollection(fc) {
                     @Override
                     public SimpleFeatureIterator features() {
                         openIterators.incrementAndGet();

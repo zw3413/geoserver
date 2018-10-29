@@ -5,13 +5,11 @@
  */
 package org.geoserver.security.decorators;
 
-import static org.geoserver.security.SecurityUtils.*;
-
 import java.util.logging.Logger;
 import org.geoserver.security.WrapperPolicy;
 import org.geotools.feature.FeatureCollection;
 import org.geotools.feature.FeatureIterator;
-import org.geotools.feature.collection.DecoratingFeatureCollection;
+import org.geotools.data.collection.DecoratingFeatureCollection;
 import org.geotools.util.logging.Logging;
 import org.opengis.feature.Feature;
 import org.opengis.feature.type.FeatureType;

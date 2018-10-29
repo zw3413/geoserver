@@ -14,7 +14,7 @@ import org.geoserver.kml.KmlEncodingContext;
 import org.geoserver.kml.decorator.PlacemarkStyleDecoratorFactory.PlacemarkStyleDecorator;
 import org.geoserver.kml.icons.IconTestSupport;
 import org.geotools.data.DataUtilities;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 import org.geotools.styling.TextSymbolizer;
 import org.junit.Test;
 import org.opengis.feature.simple.SimpleFeatureType;

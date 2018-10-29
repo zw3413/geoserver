@@ -34,7 +34,6 @@ import org.geotools.data.DataUtilities;
 import org.geotools.data.FeatureSource;
 import org.geotools.data.memory.MemoryDataStore;
 import org.geotools.data.simple.SimpleFeatureStore;
-import org.geotools.factory.CommonFactoryFinder;
 import org.geotools.feature.simple.SimpleFeatureBuilder;
 import org.geotools.feature.simple.SimpleFeatureTypeBuilder;
 import org.geotools.geometry.jts.ReferencedEnvelope;
@@ -104,7 +103,7 @@ public class WMSMockData {
                     /** Override so it does not try to load a file from disk */
                     @Override
                     public Style getStyle() throws IOException {
-                        StyleFactory styleFactory = CommonFactoryFinder.getStyleFactory(null);
+                        StyleFactory styleFactory = StyleFactoryFinder.getStyleFactory(null);
                         Style style = styleFactory.createStyle();
                         style.setName("Default Style");
                         return style;

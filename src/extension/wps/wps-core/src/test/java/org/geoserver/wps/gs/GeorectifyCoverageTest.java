@@ -16,7 +16,7 @@ import org.geoserver.wps.WPSTestSupport;
 import org.geotools.coverage.grid.GridCoverage2D;
 import org.geotools.coverage.grid.GridCoverageFactory;
 import org.geotools.factory.CommonFactoryFinder;
-import org.geotools.filter.function.RenderingTransformation;
+import org.geotools.renderer.RenderingTransformation;
 import org.geotools.geometry.Envelope2D;
 import org.geotools.geometry.jts.ReferencedEnvelope;
 import org.geotools.referencing.CRS;

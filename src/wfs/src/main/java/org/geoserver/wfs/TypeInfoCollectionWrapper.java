@@ -8,10 +8,10 @@
 package org.geoserver.wfs;
 
 import org.geoserver.catalog.FeatureTypeInfo;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 import org.geotools.feature.FeatureCollection;
-import org.geotools.feature.collection.DecoratingFeatureCollection;
-import org.geotools.feature.collection.DecoratingSimpleFeatureCollection;
+import org.geotools.data.collection.DecoratingFeatureCollection;
+import org.geotools.data.collection.DecoratingSimpleFeatureCollection;
 
 /**
  * Simple interface allowing access to the original main {@link FeatureTypeInfo} behind a feature

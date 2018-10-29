@@ -15,7 +15,7 @@ import org.geoserver.kml.decorator.KmlDecoratorFactory.KmlDecorator;
 import org.geoserver.kml.utils.ScaleStyleVisitor;
 import org.geoserver.kml.utils.SymbolizerCollector;
 import org.geoserver.wms.WMSMapContent;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 import org.geotools.feature.FeatureIterator;
 import org.geotools.filter.function.EnvFunction;
 import org.geotools.map.FeatureLayer;

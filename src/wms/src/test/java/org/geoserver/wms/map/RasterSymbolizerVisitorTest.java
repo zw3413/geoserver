@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 
 import java.io.IOException;
 import java.util.List;
-import org.geotools.factory.CommonFactoryFinder;
+
 import org.geotools.styling.NamedLayer;
 import org.geotools.styling.RasterSymbolizer;
 import org.geotools.styling.Style;
@@ -56,7 +56,7 @@ public class RasterSymbolizerVisitorTest {
     }
 
     private Style parseStyle(String styleName) throws IOException {
-        SLDParser parser = new SLDParser(CommonFactoryFinder.getStyleFactory());
+        SLDParser parser = new SLDParser(StyleFactoryFinder.getStyleFactory());
         parser.setInput(RasterSymbolizerVisitorTest.class.getResource(styleName));
         StyledLayerDescriptor sld = parser.parseSLD();
         NamedLayer ul = (NamedLayer) sld.getStyledLayers()[0];

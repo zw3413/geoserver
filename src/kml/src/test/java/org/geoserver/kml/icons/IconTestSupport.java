@@ -47,7 +47,7 @@ public class IconTestSupport {
 
     @BeforeClass
     public static void classSetup() {
-        styleFactory = (StyleFactory2) CommonFactoryFinder.getStyleFactory();
+        styleFactory = (StyleFactory2) StyleFactoryFinder.getStyleFactory();
         filterFactory = (FilterFactory2) CommonFactoryFinder.getFilterFactory2();
         GeometryFactory geometryFactory = JTSFactoryFinder.getGeometryFactory();
         SimpleFeatureTypeBuilder typeBuilder = new SimpleFeatureTypeBuilder();

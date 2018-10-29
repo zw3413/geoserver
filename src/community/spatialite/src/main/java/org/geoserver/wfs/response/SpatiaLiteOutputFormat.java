@@ -24,7 +24,7 @@ import org.geoserver.wfs.request.GetFeatureRequest;
 import org.geotools.data.DataStore;
 import org.geotools.data.FeatureWriter;
 import org.geotools.data.Transaction;
-import org.geotools.data.simple.SimpleFeatureIterator;
+import org.geotools.feature.collection.SimpleFeatureIterator;
 import org.geotools.data.spatialite.SpatiaLiteDataStoreFactory;
 import org.geotools.feature.FeatureCollection;
 import org.opengis.feature.simple.SimpleFeature;

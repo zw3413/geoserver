@@ -27,7 +27,6 @@ import org.geoserver.wms.GetMapRequest;
 import org.geoserver.wms.WMS;
 import org.geoserver.wms.map.GetMapKvpRequestReader;
 import org.geoserver.wms.map.RenderedImageMapOutputFormat;
-import org.geotools.factory.CommonFactoryFinder;
 import org.geotools.renderer.RenderListener;
 import org.geotools.renderer.lite.StreamingRenderer;
 import org.geotools.styling.AbstractStyleVisitor;
@@ -53,7 +52,7 @@ import org.opengis.style.Description;
  */
 class FeatureCountProcessor {
 
-    static final StyleFactory2 SF = (StyleFactory2) CommonFactoryFinder.getStyleFactory();
+    static final StyleFactory2 SF = (StyleFactory2) StyleFactoryFinder.getStyleFactory();
     public static final String WIDTH = "WIDTH";
     public static final String HEIGHT = "HEIGHT";
 

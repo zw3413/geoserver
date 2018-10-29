@@ -50,7 +50,7 @@ import org.geoserver.wps.executor.ProcessStatusTracker;
 import org.geoserver.wps.resource.ProcessArtifactsStore;
 import org.geoserver.wps.resource.WPSResourceManager;
 import org.geotools.data.collection.ListFeatureCollection;
-import org.geotools.data.simple.SimpleFeatureIterator;
+import org.geotools.feature.collection.SimpleFeatureIterator;
 import org.geotools.feature.FeatureCollection;
 import org.geotools.feature.simple.SimpleFeatureTypeBuilder;
 import org.geotools.geojson.feature.FeatureJSON;

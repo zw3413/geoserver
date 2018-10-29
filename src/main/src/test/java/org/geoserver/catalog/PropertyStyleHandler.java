@@ -41,7 +41,7 @@ public class PropertyStyleHandler extends StyleHandler {
 
     public PropertyStyleHandler() {
         super("Property", FORMAT);
-        styleFactory = CommonFactoryFinder.getStyleFactory();
+        styleFactory = StyleFactoryFinder.getStyleFactory();
         filterFactory = CommonFactoryFinder.getFilterFactory();
     }
 

@@ -14,7 +14,7 @@ import javax.xml.namespace.QName;
 import org.geoserver.feature.ReprojectingFeatureCollection;
 import org.geoserver.wms.WMSMapContent;
 import org.geotools.data.Query;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 import org.geotools.data.simple.SimpleFeatureSource;
 import org.geotools.factory.CommonFactoryFinder;
 import org.geotools.geometry.jts.ReferencedEnvelope;

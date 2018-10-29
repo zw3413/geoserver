@@ -69,10 +69,11 @@ import org.geotools.coverage.grid.GridGeometry2D;
 import org.geotools.coverage.grid.io.AbstractGridFormat;
 import org.geotools.coverage.grid.io.GridCoverage2DReader;
 import org.geotools.data.Query;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 import org.geotools.gce.imagemosaic.ImageMosaicFormat;
 import org.geotools.geometry.jts.ReferencedEnvelope;
 import org.geotools.image.ImageWorker;
+import org.geotools.image.util.ColorUtilities;
 import org.geotools.map.Layer;
 import org.geotools.map.StyleLayer;
 import org.geotools.parameter.Parameter;
@@ -87,7 +88,6 @@ import org.geotools.renderer.lite.RenderingTransformationHelper;
 import org.geotools.renderer.lite.StreamingRenderer;
 import org.geotools.renderer.lite.gridcoverage2d.ChannelSelectionUpdateStyleVisitor;
 import org.geotools.renderer.lite.gridcoverage2d.GridCoverageRenderer;
-import org.geotools.image.util.ColorUtilities;
 import org.geotools.styling.RasterSymbolizer;
 import org.geotools.styling.Style;
 import org.geotools.util.logging.Logging;
@@ -1535,9 +1535,9 @@ public class RenderedImageMapOutputFormat extends AbstractMapOutputFormat {
         if (tranformation instanceof ProcessFunction) {
             ProcessFunction processFunction = (ProcessFunction) tranformation;
             Name processName = processFunction.getProcessName();
-            Map<String, org.geotools.data.Parameter<?>> params =
+            Map<String, Parameter<?>> params =
                     Processors.getParameterInfo(processName);
-            for (org.geotools.data.Parameter<?> param : params.values()) {
+            for (Parameter<?> param : params.values()) {
                 if (SimpleFeatureCollection.class.isAssignableFrom(param.getType())) {
                     return true;
                 }

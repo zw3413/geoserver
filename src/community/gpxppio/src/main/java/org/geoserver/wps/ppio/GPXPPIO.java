@@ -11,7 +11,7 @@ import java.io.OutputStream;
 import java.util.logging.Logger;
 import org.geoserver.config.ContactInfo;
 import org.geoserver.config.GeoServer;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 import org.geotools.data.store.ReprojectingFeatureCollection;
 import org.geotools.feature.FeatureCollection;
 import org.geotools.referencing.CRS;

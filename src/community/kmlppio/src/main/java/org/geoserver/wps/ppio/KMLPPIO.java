@@ -29,7 +29,7 @@ import org.geoserver.kml.sequence.WFSFeatureSequenceFactory;
 import org.geoserver.platform.ServiceException;
 import org.geoserver.wfs.WFSInfo;
 import org.geotools.data.collection.ListFeatureCollection;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 import org.geotools.data.store.ReprojectingFeatureCollection;
 import org.geotools.feature.FeatureCollection;
 import org.geotools.feature.simple.SimpleFeatureBuilder;

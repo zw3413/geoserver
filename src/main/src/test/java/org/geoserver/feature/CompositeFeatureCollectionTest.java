@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import org.geotools.data.DataTestCase;
 import org.geotools.data.DataUtilities;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 import org.geotools.geometry.jts.ReferencedEnvelope;
 
 public class CompositeFeatureCollectionTest extends DataTestCase {

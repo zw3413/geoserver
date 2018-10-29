@@ -30,7 +30,7 @@ import org.geotools.data.Transaction;
 import org.geotools.data.csv.CSVDataStore;
 import org.geotools.data.csv.CSVDataStoreFactory;
 import org.geotools.data.csv.CSVFeatureStore;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 import org.geotools.data.simple.SimpleFeatureSource;
 import org.geotools.util.logging.Logging;
 import org.geotools.xml.Text;

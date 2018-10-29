@@ -26,7 +26,6 @@ import org.geoserver.platform.resource.ResourceStore;
 import org.geoserver.platform.resource.Resources;
 import org.geoserver.util.EntityResolverProvider;
 import org.geotools.data.DataUtilities;
-import org.geotools.styling.*;
 import org.geotools.util.URLs;
 import org.xml.sax.EntityResolver;
 

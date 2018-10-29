@@ -24,8 +24,9 @@ import org.geoserver.wfs.WFSTestSupport;
 import org.geoserver.wfs.request.FeatureCollectionResponse;
 import org.geotools.data.DataUtilities;
 import org.geotools.data.FeatureSource;
-import org.geotools.data.simple.SimpleFeatureCollection;
-import org.geotools.data.simple.SimpleFeatureIterator;
+import org.geotools.data.collection.DecoratingSimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureIterator;
 import org.geotools.feature.FeatureCollection;
 import org.junit.Test;
 import org.opengis.feature.simple.SimpleFeature;
@@ -168,7 +169,7 @@ public class KMLWFSTest extends WFSTestSupport {
         SimpleFeatureCollection fc = (SimpleFeatureCollection) fs.getFeatures();
         final AtomicInteger openIterators = new AtomicInteger(0);
         FeatureCollection decorated =
-                new org.geotools.feature.collection.DecoratingSimpleFeatureCollection(fc) {
+                new DecoratingSimpleFeatureCollection(fc) {
                     @Override
                     public SimpleFeatureIterator features() {
                         openIterators.incrementAndGet();

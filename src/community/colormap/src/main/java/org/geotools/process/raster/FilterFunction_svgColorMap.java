@@ -52,7 +52,7 @@ public class FilterFunction_svgColorMap extends FunctionExpressionImpl {
 
     public static final Color TRANSPARENT_COLOR = new Color(0, 0, 0, 0);
 
-    private static StyleFactory SF = CommonFactoryFinder.getStyleFactory();
+    private static StyleFactory SF = StyleFactoryFinder.getStyleFactory();
     private static FilterFactory FF = CommonFactoryFinder.getFilterFactory();
 
     public static FunctionName NAME =

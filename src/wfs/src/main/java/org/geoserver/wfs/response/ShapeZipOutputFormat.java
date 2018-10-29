@@ -60,7 +60,7 @@ import org.geoserver.wfs.request.GetFeatureRequest;
 import org.geotools.data.DataUtilities;
 import org.geotools.data.collection.ListFeatureCollection;
 import org.geotools.data.shapefile.ShapefileDumper;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 import org.geotools.data.simple.SimpleFeatureSource;
 import org.geotools.referencing.CRS;
 import org.geotools.util.logging.Logging;

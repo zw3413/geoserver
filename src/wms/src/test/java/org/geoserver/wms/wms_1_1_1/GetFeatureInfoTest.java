@@ -1017,7 +1017,7 @@ public class GetFeatureInfoTest extends WMSTestSupport {
 
         FeatureTypeStyle fts = s.featureTypeStyles().get(0);
         FilterFactory ff = CommonFactoryFinder.getFilterFactory(null);
-        StyleFactory sf = CommonFactoryFinder.getStyleFactory();
+        StyleFactory sf = StyleFactoryFinder.getStyleFactory();
         for (int i = 0; i < 21; i++) {
             Filter f = ff.equals(ff.literal(1), ff.literal(1));
             Rule r = sf.createRule();

@@ -20,7 +20,7 @@ import org.geoserver.script.wps.ScriptProcess;
 import org.geoserver.script.wps.ScriptProcessFactory;
 import org.geotools.data.FeatureSource;
 import org.geotools.data.Parameter;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 import org.geotools.feature.FeatureCollection;
 import org.geotools.feature.NameImpl;
 import org.geotools.process.Process;

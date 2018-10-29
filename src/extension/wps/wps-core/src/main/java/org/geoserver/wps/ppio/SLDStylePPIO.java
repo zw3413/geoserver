@@ -7,7 +7,7 @@ package org.geoserver.wps.ppio;
 
 import java.io.InputStream;
 import java.io.StringReader;
-import org.geotools.factory.CommonFactoryFinder;
+
 import org.geotools.sld.SLDConfiguration;
 import org.geotools.sld.bindings.SLD;
 import org.geotools.styling.NamedLayer;
@@ -46,7 +46,7 @@ public class SLDStylePPIO extends XMLPPIO {
 
     @Override
     public void encode(Object obj, ContentHandler handler) throws Exception {
-        StyleFactory sf = CommonFactoryFinder.getStyleFactory(null);
+        StyleFactory sf = StyleFactoryFinder.getStyleFactory(null);
         StyledLayerDescriptor sld = sf.createStyledLayerDescriptor();
         NamedLayer nl = sf.createNamedLayer();
         nl.setName("");

@@ -40,7 +40,7 @@ public final class IconPropertyInjector {
 
     private IconPropertyInjector(Map<String, String> properties) {
         this.filterFactory = CommonFactoryFinder.getFilterFactory();
-        this.styleFactory = CommonFactoryFinder.getStyleFactory();
+        this.styleFactory = StyleFactoryFinder.getStyleFactory();
         this.properties = properties;
     }
 
@@ -282,7 +282,7 @@ public final class IconPropertyInjector {
 
     public static Style injectProperties(Style style, Map<String, String> properties) {
         List<List<MiniRule>> ftStyles = MiniRule.minify(style);
-        StyleFactory factory = CommonFactoryFinder.getStyleFactory();
+        StyleFactory factory = StyleFactoryFinder.getStyleFactory();
         return MiniRule.makeStyle(
                 factory, new IconPropertyInjector(properties).injectProperties(ftStyles));
     }

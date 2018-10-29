@@ -22,7 +22,7 @@ import org.geoserver.wfs.response.ShapeZipOutputFormat;
 import org.geoserver.wps.resource.ShapefileResource;
 import org.geoserver.wps.resource.WPSResourceManager;
 import org.geotools.data.shapefile.ShapefileDataStore;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 import org.geotools.feature.FeatureCollection;
 import org.geotools.util.URLs;
 

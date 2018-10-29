@@ -6,7 +6,7 @@ package org.geoserver.rest.catalog;
 
 import java.io.IOException;
 import org.geoserver.rest.util.MediaTypeExtensions;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 import org.springframework.http.HttpOutputMessage;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageNotWritableException;

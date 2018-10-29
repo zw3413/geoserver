@@ -7,7 +7,7 @@ package org.geoserver.rest.catalog;
 import java.io.IOException;
 import org.geoserver.rest.catalog.FormatCollectionWrapper.JSONCollectionWrapper;
 import org.geoserver.rest.converters.BaseMessageConverter;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 import org.geotools.geojson.feature.FeatureJSON;
 import org.geotools.wfs.GML;
 import org.geotools.wfs.GML.Version;

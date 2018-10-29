@@ -12,7 +12,7 @@ import net.opengis.wfs.TransactionType;
 import net.opengis.wfs.UpdateElementType;
 import org.geoserver.wfs.request.TransactionRequest;
 import org.geotools.data.Transaction;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 
 /**
  * Event carrying information about a change that happened/that is about to occur.

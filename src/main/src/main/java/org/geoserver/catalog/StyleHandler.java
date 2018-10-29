@@ -19,7 +19,6 @@ import java.util.Arrays;
 import java.util.List;
 import javax.activation.MimetypesFileTypeMap;
 import org.geoserver.platform.resource.Resource;
-import org.geotools.factory.CommonFactoryFinder;
 import org.geotools.styling.ResourceLocator;
 import org.geotools.styling.StyleFactory;
 import org.geotools.styling.StyledLayerDescriptor;
@@ -35,7 +34,7 @@ import org.xml.sax.EntityResolver;
  */
 public abstract class StyleHandler {
 
-    protected static StyleFactory styleFactory = CommonFactoryFinder.getStyleFactory(null);
+    protected static StyleFactory styleFactory = StyleFactoryFinder.getStyleFactory(null);
 
     protected static String[] IMAGE_EXTENSIONS = new String[] {"png", "jpg", "jpeg", "gif", "svg"};
 

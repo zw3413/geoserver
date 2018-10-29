@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 import org.geotools.data.crs.ReprojectFeatureResults;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 import org.geotools.feature.FeatureCollection;
 import org.geotools.feature.FeatureIterator;
 import org.geotools.referencing.CRS;

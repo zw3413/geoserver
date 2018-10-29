@@ -26,8 +26,7 @@ import org.geotools.data.Transaction;
 import org.geotools.data.memory.MemoryDataStore;
 import org.geotools.data.shapefile.ShapefileDataStoreFactory;
 import org.geotools.data.simple.SimpleFeatureSource;
-import org.geotools.factory.CommonFactoryFinder;
-import org.geotools.feature.DefaultFeatureCollection;
+import org.geotools.data.collection.DefaultFeatureCollection;
 import org.geotools.feature.simple.SimpleFeatureBuilder;
 import org.geotools.feature.simple.SimpleFeatureTypeBuilder;
 import org.geotools.map.DefaultMapContext;
@@ -186,7 +185,7 @@ class CRSAreaOfValidityMapBuilder {
         Style style = STYLES.get(styleName);
         if (style == null) {
             StyleFactory styleFactory =
-                    CommonFactoryFinder.getStyleFactory(GeoTools.getDefaultHints());
+                    StyleFactoryFinder.getStyleFactory(GeoTools.getDefaultHints());
             SLDParser parser = new SLDParser(styleFactory);
             try {
                 parser.setInput(getClass().getResource(styleName));

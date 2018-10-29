@@ -34,7 +34,7 @@ public class IconRendererTest {
 
     @Test
     public void testSimpleCircle() throws Exception {
-        StyleFactory sfact = CommonFactoryFinder.getStyleFactory();
+        StyleFactory sfact = StyleFactoryFinder.getStyleFactory();
         FilterFactory ffact = CommonFactoryFinder.getFilterFactory();
 
         Mark m =
@@ -92,7 +92,7 @@ public class IconRendererTest {
 
     @Test
     public void testSimpleSquare() throws Exception {
-        StyleFactory sfact = CommonFactoryFinder.getStyleFactory();
+        StyleFactory sfact = StyleFactoryFinder.getStyleFactory();
         FilterFactory ffact = CommonFactoryFinder.getFilterFactory();
 
         Mark m =
@@ -150,7 +150,7 @@ public class IconRendererTest {
 
     @Test
     public void testSquareRotated45() throws Exception {
-        StyleFactory sfact = CommonFactoryFinder.getStyleFactory();
+        StyleFactory sfact = StyleFactoryFinder.getStyleFactory();
         FilterFactory ffact = CommonFactoryFinder.getFilterFactory();
 
         Mark m =
@@ -211,7 +211,7 @@ public class IconRendererTest {
 
     @Test
     public void testExternalImage() throws Exception {
-        StyleFactory sfact = CommonFactoryFinder.getStyleFactory();
+        StyleFactory sfact = StyleFactoryFinder.getStyleFactory();
         FilterFactory ffact = CommonFactoryFinder.getFilterFactory();
 
         GraphicalSymbol gs =
@@ -259,7 +259,7 @@ public class IconRendererTest {
 
     @Test
     public void testExternalImageRotated45() throws Exception {
-        StyleFactory sfact = CommonFactoryFinder.getStyleFactory();
+        StyleFactory sfact = StyleFactoryFinder.getStyleFactory();
         FilterFactory ffact = CommonFactoryFinder.getFilterFactory();
 
         GraphicalSymbol gs =
@@ -309,7 +309,7 @@ public class IconRendererTest {
 
     @Test
     public void testBigExternalImage() throws Exception {
-        StyleFactory sfact = CommonFactoryFinder.getStyleFactory();
+        StyleFactory sfact = StyleFactoryFinder.getStyleFactory();
         FilterFactory ffact = CommonFactoryFinder.getFilterFactory();
 
         GraphicalSymbol gs =
@@ -358,7 +358,7 @@ public class IconRendererTest {
 
     @Test
     public void testBigExternalImageSpecifySize() throws Exception {
-        StyleFactory sfact = CommonFactoryFinder.getStyleFactory();
+        StyleFactory sfact = StyleFactoryFinder.getStyleFactory();
         FilterFactory ffact = CommonFactoryFinder.getFilterFactory();
 
         GraphicalSymbol gs =
@@ -407,7 +407,7 @@ public class IconRendererTest {
 
     @Test
     public void testBigExternalImageNilExpressionSize() throws Exception {
-        StyleFactory sfact = CommonFactoryFinder.getStyleFactory();
+        StyleFactory sfact = StyleFactoryFinder.getStyleFactory();
         FilterFactory ffact = CommonFactoryFinder.getFilterFactory();
 
         GraphicalSymbol gs =

@@ -5,7 +5,8 @@
  */
 package org.geoserver.feature;
 
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.data.collection.DecoratingSimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 
 /**
  * Base class for a feature collection with decorates another feature collection.
@@ -13,10 +14,10 @@ import org.geotools.data.simple.SimpleFeatureCollection;
  * <p>Subclasses should override methods as needed to "decorate" .
  *
  * @author Justin Deoliveira, The Open Planning Project, jdeolive@openplans.org
- * @deprecated use {@link org.geotools.feature.collection.DecoratingFeatureCollection}.
+ * @deprecated use {@link org.geotools.data.collection.DecoratingFeatureCollection}.
  */
 public class DecoratingFeatureCollection
-        extends org.geotools.feature.collection.DecoratingSimpleFeatureCollection {
+        extends DecoratingSimpleFeatureCollection {
 
     public DecoratingFeatureCollection(SimpleFeatureCollection delegate) {
         super(delegate);

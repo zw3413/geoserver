@@ -9,7 +9,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.geoserver.catalog.FeatureTypeInfo;
 import org.geotools.data.Query;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 import org.geotools.data.simple.SimpleFeatureSource;
 import org.geotools.filter.visitor.SimplifyingFilterVisitor;
 import org.geotools.coverage.util.FeatureUtilities;

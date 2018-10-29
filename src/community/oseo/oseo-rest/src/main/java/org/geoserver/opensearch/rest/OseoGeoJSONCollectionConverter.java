@@ -7,7 +7,7 @@ package org.geoserver.opensearch.rest;
 import java.io.IOException;
 import org.geoserver.platform.ExtensionPriority;
 import org.geoserver.rest.converters.BaseMessageConverter;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 import org.geotools.feature.FeatureCollection;
 import org.geotools.geojson.feature.FeatureJSON;
 import org.springframework.http.HttpInputMessage;

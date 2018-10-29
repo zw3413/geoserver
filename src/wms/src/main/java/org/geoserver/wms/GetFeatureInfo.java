@@ -18,7 +18,7 @@ import org.geoserver.wms.featureinfo.FeatureCollectionDecorator;
 import org.geoserver.wms.featureinfo.LayerIdentifier;
 import org.geotools.data.DataUtilities;
 import org.geotools.data.Query;
-import org.geotools.data.simple.SimpleFeatureCollection;
+import org.geotools.feature.collection.SimpleFeatureCollection;
 import org.geotools.feature.FeatureCollection;
 import org.geotools.feature.NameImpl;
 import org.geotools.util.logging.Logging;
